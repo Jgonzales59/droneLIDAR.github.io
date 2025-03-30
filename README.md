@@ -14,7 +14,8 @@ There are various ways that a Sobel Edge Detection can be done. It can be done t
 circuit customized for a specific applications. 
 
 
-![image](https://github.com/user-attachments/assets/a38a9b16-0486-4e73-a4c6-34c380f13d95)
+![image](https://github.com/user-attachments/assets/31798fd0-1380-4bae-ac95-9960e7de45f5)
+
 
 
 FGPA: The advantage of the FGPA circuit model is its fast usage and integration of parallel circuit systems. It can virtual cells that can be inolved in the creation of logical arrays 
