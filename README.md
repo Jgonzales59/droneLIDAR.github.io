@@ -7,15 +7,34 @@
 
 ## What are Sobel Edge Detection Systems? 
 A technique highly involved in computer processing and computer vision. It can help create image processing and
-computer vision using edge detection algorithmns. 
+computer vision using edge detection algorithmns. This acts as a discrete differentiation operator and it involves 
+using 3x3 kernels as shown below. 
 
 
 ## Programs 
 > Xlinix (ARTY Z7)
 > Vivado (ARTY Z7)
 > iceStick Evaluation
->
-> 
+
+### Embedded Chip 
+
+### FGPA Modulation 
+Repo2Txt
+// This makes all the FGPA LED Lights power on: 
+module leds(output wire D1, 
+            output wire D2, 
+            output wire D3,  
+            output wire D4, 
+            output wire D5); 
+
+assign D1 = 1'b1;
+assign D2 = 1'b1;
+assign D3 = 1'b1;
+assign D4 = 1'b1;
+assign D5 = 1'b1;
+
+endmodule 
+
 ## Embedded Chips vs. FGPA 
 There are various ways that a Sobel Edge Detection can be done. It can be done through a chip Embedded System or a (FGPA) which is a 
 circuit customized for a specific applications. 
