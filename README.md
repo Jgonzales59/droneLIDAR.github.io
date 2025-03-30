@@ -4,24 +4,25 @@
 
 
 
-
 ## What are Sobel Edge Detection Systems? 
 A technique highly involved in computer processing and computer vision. It can help create image processing and
 computer vision using edge detection algorithmns. This acts as a discrete differentiation operator and it involves 
 using 3x3 kernels as shown below. 
 ![image](https://github.com/user-attachments/assets/3b1a3722-018d-4dbd-8b1a-26abeaaee083)
 
-Using a 2D dimesional matrix, this Detection system is the technology behind most the code in capturing images. 
-
+Using a 2D dimesional matrix, this Detection system is the technology behind most the code in capturing images 
+and can have further applications to power inspection with drones and real-time video processing. By using 
+hardware modelling and software integration, Sobel Edge Detection is at the forefront of science leading 
+engineers in analyzing critical systems. 
 
 ## Programs 
 > Xlinix (ARTY Z7)
 > Vivado (ARTY Z7)
 > iceStick Evaluation
 
-### Embedded Chip 
+### Embedded Chip Processor Test 
 
-### FGPA Modulation 
+### FGPA Modulation Test 
 Repo2Txt
 // This makes all the FGPA LED Lights power on: 
 
@@ -35,16 +36,13 @@ assign D2 = 1'b1;
 assign D3 = 1'b1;
 assign D4 = 1'b1;
 assign D5 = 1'b1;
-
 endmodule 
 
 ## Embedded Chips vs. FGPA 
 There are various ways that a Sobel Edge Detection can be done. It can be done through a chip Embedded System or a (FGPA) which is a 
 circuit customized for a specific applications. 
 
-
 ![image](https://github.com/user-attachments/assets/31798fd0-1380-4bae-ac95-9960e7de45f5)
-
 
 
 FGPA: The advantage of the FGPA circuit model is its fast usage and integration of parallel circuit systems. It can virtual cells that can be inolved in the creation of logical arrays 
@@ -55,7 +53,13 @@ For experimentation the Chip method was used as it is slightly easier to work wi
 ## ice40 Lp/Hx 2.1 Pinout Excel file
 [Excel File] https://fiudit-my.sharepoint.com/:x:/r/personal/jgonz1399_fiu_edu/Documents/iCE40PinoutHX1K.xlsx?d=wec95994da6e4476abe0c995e11ac5249&csf=1&web=1&e=wnt0s3
 
-
+## Future Product & Work Services
+Real-Time  Detection Systems
+Modules for Robotics Detection 
+Quality Control & Inspection Solutions
+Vehicle and Lane Detection Systems
+Custom FPGA-Based Processing Units
+Maintenance & Support Services
 
 ###### Resources & Citations 
 - https://techterms.com/definition/fpga#:~:text=An%20FPGA%20is%20an%20integrated%20circuit%20that%20can,blocks%20that%20can%20be%20wired%20in%20different%20configurations.
