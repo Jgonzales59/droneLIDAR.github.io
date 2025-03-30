@@ -6,9 +6,16 @@
 
 
 ## What are Sobel Edge Detection Systems? 
-A technique highly involved in computer processing and computer vision 
+A technique highly involved in computer processing and computer vision. It can help create image processing and
+computer vision using edge detection algorithmns. 
 
 
+## Programs 
+> Xlinix (ARTY Z7)
+> Vivado (ARTY Z7)
+> iceStick Evaluation
+>
+> 
 ## Embedded Chips vs. FGPA 
 There are various ways that a Sobel Edge Detection can be done. It can be done through a chip Embedded System or a (FGPA) which is a 
 circuit customized for a specific applications. 
@@ -29,3 +36,4 @@ making it faster than hardware chip processors. They do rely on HLDs which assig
 
 ###### Resources & Citations 
 - https://techterms.com/definition/fpga#:~:text=An%20FPGA%20is%20an%20integrated%20circuit%20that%20can,blocks%20that%20can%20be%20wired%20in%20different%20configurations.
+- https://www.erhardt-leimer.com/global/en/products/measuring-technology/measuring-systems-for-the-tire-industry/el-edge-detection-by-laser-triangulation.html?utm_medium=sea&utm_source=bing&utm_campaign=SRC-Generic-Produkte-USA/Oceania&utm_content=edge%20detection%20production&msclkid=e7bc02392931105c52ca65d0bde4d713
