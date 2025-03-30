@@ -1,0 +1,31 @@
+
+% This function gets our Sobel Filter and gets every integer
+entity sobel_filter is
+  port (
+    clk : in std_logic;
+    row1, row2, row3 : in std_logic_vector(7 downto 0);
+    gx, gy : out integer;
+    magnitude : out integer
+  );
+end entity;
+% Our function is given a behavior and begins analyzing each integre according to the way we want it. 
+architecture Behavioral of sobel_filter is
+  signal gx_temp, gy_temp : integer;
+begin
+  process(clk)
+  begin
+    if rising_edge(clk) then
+      gx_temp <= (-1 * to_integer(unsigned(row1(0)))) + (1 * to_integer(unsigned(row1(2)))) +
+                 (-2 * to_integer(unsigned(row2(0)))) + (2 * to_integer(unsigned(row2(2)))) +
+                 (-1 * to_integer(unsigned(row3(0)))) + (1 * to_integer(unsigned(row3(2))));
+
+      gy_temp <= (-1 * to_integer(unsigned(row1(0)))) + (-2 * to_integer(unsigned(row1(1)))) + (-1 * to_integer(unsigned(row1(2)))) +
+                 (1 * to_integer(unsigned(row3(0)))) + (2 * to_integer(unsigned(row3(1)))) + (1 * to_integer(unsigned(row3(2))));
+
+      gx <= gx_temp;
+      gy <= gy_temp;
+
+      magnitude <= abs(gx_temp) + abs(gy_temp); -- Approximate magnitude
+    end if;
+  end process;
+end Behavioral;
