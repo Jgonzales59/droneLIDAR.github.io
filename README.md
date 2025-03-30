@@ -21,12 +21,12 @@ using 3x3 kernels as shown below.
 ### FGPA Modulation 
 Repo2Txt
 // This makes all the FGPA LED Lights power on: 
+
 module leds(output wire D1, 
             output wire D2, 
             output wire D3,  
             output wire D4, 
             output wire D5); 
-
 assign D1 = 1'b1;
 assign D2 = 1'b1;
 assign D3 = 1'b1;
