@@ -9,6 +9,9 @@
 A technique highly involved in computer processing and computer vision. It can help create image processing and
 computer vision using edge detection algorithmns. This acts as a discrete differentiation operator and it involves 
 using 3x3 kernels as shown below. 
+![image](https://github.com/user-attachments/assets/3b1a3722-018d-4dbd-8b1a-26abeaaee083)
+
+Using a 2D dimesional matrix, this Detection system is the technology behind most the code in capturing images. 
 
 
 ## Programs 
