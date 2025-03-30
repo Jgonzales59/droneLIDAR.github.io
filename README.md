@@ -46,10 +46,11 @@ circuit customized for a specific applications.
 
 FGPA: The advantage of the FGPA circuit model is its fast usage and integration of parallel circuit systems. It can virtual cells that can be inolved in the creation of logical arrays 
 making it faster than hardware chip processors. They do rely on HLDs which assign a gate to a boolean operator and can link several gates together. 
+Chip: Slower to calculate, involves C and C++ programming methodology. 
+For experimentation the Chip method was used as it is slightly easier to work with. 
 
 ## ice40 Lp/Hx 2.1 Pinout Excel file
 [Excel File] https://fiudit-my.sharepoint.com/:x:/r/personal/jgonz1399_fiu_edu/Documents/iCE40PinoutHX1K.xlsx?d=wec95994da6e4476abe0c995e11ac5249&csf=1&web=1&e=wnt0s3
-
 
 
 
