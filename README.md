@@ -12,7 +12,10 @@ A technique highly involved in computer processing and computer vision
 ## Embedded Chips vs. FGPA 
 There are various ways that a Sobel Edge Detection can be done. It can be done through a chip Embedded System or a (FGPA) which is a 
 circuit customized for a specific applications. 
-![Comparison of two methods](https://github.com/user-attachments/assets/3d146456-718e-47a0-babf-43f6dac96edc)
+
+
+![image](https://github.com/user-attachments/assets/a38a9b16-0486-4e73-a4c6-34c380f13d95)
+
 
 FGPA: The advantage of the FGPA circuit model is its fast usage and integration of parallel circuit systems. It can virtual cells that can be inolved in the creation of logical arrays 
 making it faster than hardware chip processors. They do rely on HLDs which assign a gate to a boolean operator and can link several gates together. 
