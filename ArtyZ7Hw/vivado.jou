@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Mar 31 10:52:46 2025
+# Process ID: 27752
+# Current directory: C:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24704 C:\Users\henri\Downloads\Arty-Z7-20-HDMI-in-hw.xpr\Arty-Z7-HW\Arty-Z7-HW.xpr
+# Log file: C:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/vivado.log
+# Journal file: C:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW\vivado.jou
+# Running On: Henrik-MainPC, OS: Windows, CPU Frequency: 3610 MHz, CPU Physical cores: 12, Host memory: 34164 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.xpr

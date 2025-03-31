@@ -1,0 +1,947 @@
+
+*** Running vivado
+    with args -log hdmi_in_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source hdmi_in_wrapper.tcl -notrace
+
+
+
+****** Vivado v2024.2.2 (64-bit)
+  **** SW Build 6060944 on Thu Mar 06 19:10:01 MST 2025
+  **** IP Build 6050500 on Thu Mar  6 23:33:39 MST 2025
+  **** SharedData Build 6060542 on Thu Mar 06 10:31:07 MST 2025
+  **** Start of session at: Mon Mar 31 14:51:51 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source hdmi_in_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/henri/Downloads/vivado-library-7e7fdb96a95b6a08d69a8efa49abf24187782134/vivado-library-7e7fdb96a95b6a08d69a8efa49abf24187782134/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is C:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.cache/ip 
+Command: link_design -top hdmi_in_wrapper -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.512 . Memory (MB): peak = 772.074 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1225 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/src/ila_pixclk/ila_v6_2/constraints/ila.xdc] for cell 'hdmi_in_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx/inst'
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/src/ila_pixclk/ila_v6_2/constraints/ila.xdc] for cell 'hdmi_in_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx/inst'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/src/ila_refclk/ila_v6_2/constraints/ila.xdc] for cell 'hdmi_in_i/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx/inst'
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/src/ila_refclk/ila_v6_2/constraints/ila.xdc] for cell 'hdmi_in_i/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx/inst'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/src/dvi2rgb.xdc] for cell 'hdmi_in_i/dvi2rgb_0/U0'
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/src/dvi2rgb.xdc] for cell 'hdmi_in_i/dvi2rgb_0/U0'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_proc_sys_reset_0_0/hdmi_in_proc_sys_reset_0_0_board.xdc] for cell 'hdmi_in_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_proc_sys_reset_0_0/hdmi_in_proc_sys_reset_0_0_board.xdc] for cell 'hdmi_in_i/proc_sys_reset_0/U0'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_proc_sys_reset_0_0/hdmi_in_proc_sys_reset_0_0.xdc] for cell 'hdmi_in_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_proc_sys_reset_0_0/hdmi_in_proc_sys_reset_0_0.xdc] for cell 'hdmi_in_i/proc_sys_reset_0/U0'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_processing_system7_0_0/hdmi_in_processing_system7_0_0.xdc] for cell 'hdmi_in_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_processing_system7_0_0/hdmi_in_processing_system7_0_0.xdc] for cell 'hdmi_in_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_rgb2dvi_0_0/src/rgb2dvi.xdc] for cell 'hdmi_in_i/rgb2dvi_0/U0'
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_rgb2dvi_0_0/src/rgb2dvi.xdc] for cell 'hdmi_in_i/rgb2dvi_0/U0'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_rst_processing_system7_0_100M_0/hdmi_in_rst_processing_system7_0_100M_0_board.xdc] for cell 'hdmi_in_i/rst_processing_system7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_rst_processing_system7_0_100M_0/hdmi_in_rst_processing_system7_0_100M_0_board.xdc] for cell 'hdmi_in_i/rst_processing_system7_0_100M/U0'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_rst_processing_system7_0_100M_0/hdmi_in_rst_processing_system7_0_100M_0.xdc] for cell 'hdmi_in_i/rst_processing_system7_0_100M/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_rst_processing_system7_0_100M_0/hdmi_in_rst_processing_system7_0_100M_0.xdc:50]
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_rst_processing_system7_0_100M_0/hdmi_in_rst_processing_system7_0_100M_0.xdc] for cell 'hdmi_in_i/rst_processing_system7_0_100M/U0'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_rst_processing_system7_0_150M_0/hdmi_in_rst_processing_system7_0_150M_0_board.xdc] for cell 'hdmi_in_i/rst_processing_system7_0_150M/U0'
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_rst_processing_system7_0_150M_0/hdmi_in_rst_processing_system7_0_150M_0_board.xdc] for cell 'hdmi_in_i/rst_processing_system7_0_150M/U0'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_rst_processing_system7_0_150M_0/hdmi_in_rst_processing_system7_0_150M_0.xdc] for cell 'hdmi_in_i/rst_processing_system7_0_150M/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_rst_processing_system7_0_150M_0/hdmi_in_rst_processing_system7_0_150M_0.xdc:50]
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_rst_processing_system7_0_150M_0/hdmi_in_rst_processing_system7_0_150M_0.xdc] for cell 'hdmi_in_i/rst_processing_system7_0_150M/U0'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_gpio_video_0/hdmi_in_axi_gpio_video_0_board.xdc] for cell 'hdmi_in_i/axi_gpio_video/U0'
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_gpio_video_0/hdmi_in_axi_gpio_video_0_board.xdc] for cell 'hdmi_in_i/axi_gpio_video/U0'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_gpio_video_0/hdmi_in_axi_gpio_video_0.xdc] for cell 'hdmi_in_i/axi_gpio_video/U0'
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_gpio_video_0/hdmi_in_axi_gpio_video_0.xdc] for cell 'hdmi_in_i/axi_gpio_video/U0'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0.xdc] for cell 'hdmi_in_i/axi_vdma_0/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0.xdc:68]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0.xdc:72]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0.xdc:80]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0.xdc:84]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0.xdc:92]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0.xdc:96]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0.xdc:108]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0.xdc:192]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0.xdc:196]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0.xdc:200]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0.xdc:204]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0.xdc:208]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0.xdc:212]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0.xdc:216]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0.xdc:220]
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0.xdc] for cell 'hdmi_in_i/axi_vdma_0/U0'
+Parsing XDC File [C:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.srcs/constrs_1/imports/constraints/ArtyZ7_7020Master.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site IOPAD_X1Y52 is not part of a diff pair [C:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.srcs/constrs_1/imports/constraints/ArtyZ7_7020Master.xdc:2]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T3' is not a valid site or package pin name. [C:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.srcs/constrs_1/imports/constraints/ArtyZ7_7020Master.xdc:3]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site IOPAD_X1Y53 is not part of a diff pair [C:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.srcs/constrs_1/imports/constraints/ArtyZ7_7020Master.xdc:4]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site IOPAD_X1Y55 is not part of a diff pair [C:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.srcs/constrs_1/imports/constraints/ArtyZ7_7020Master.xdc:5]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V4' is not a valid site or package pin name. [C:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.srcs/constrs_1/imports/constraints/ArtyZ7_7020Master.xdc:6]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site IOPAD_X1Y63 is not part of a diff pair [C:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.srcs/constrs_1/imports/constraints/ArtyZ7_7020Master.xdc:7]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, the positive port (P-side) 'TMDS_Data_p_0[2]' of a differential pair cannot be placed on a negative package pin 'W4' (IOBS). [C:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.srcs/constrs_1/imports/constraints/ArtyZ7_7020Master.xdc:8]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site IOPAD_X1Y61 is not part of a diff pair [C:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.srcs/constrs_1/imports/constraints/ArtyZ7_7020Master.xdc:9]
+Finished Parsing XDC File [C:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.srcs/constrs_1/imports/constraints/ArtyZ7_7020Master.xdc]
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/src/ila_timing_workaround.xdc] for cell 'hdmi_in_i/dvi2rgb_0/U0'
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/src/ila_timing_workaround.xdc] for cell 'hdmi_in_i/dvi2rgb_0/U0'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc] for cell 'hdmi_in_i/rgb2dvi_0/U0'
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc] for cell 'hdmi_in_i/rgb2dvi_0/U0'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_s00_regslice_0/hdmi_in_axi_mem_intercon_imp_s00_regslice_0_clocks.xdc] for cell 'hdmi_in_i/axi_mem_intercon/s00_couplers/s00_regslice/inst'
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_s00_regslice_0/hdmi_in_axi_mem_intercon_imp_s00_regslice_0_clocks.xdc] for cell 'hdmi_in_i/axi_mem_intercon/s00_couplers/s00_regslice/inst'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_s00_data_fifo_0/hdmi_in_axi_mem_intercon_imp_s00_data_fifo_0_clocks.xdc] for cell 'hdmi_in_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst'
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_s00_data_fifo_0/hdmi_in_axi_mem_intercon_imp_s00_data_fifo_0_clocks.xdc:2]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_s00_data_fifo_0/hdmi_in_axi_mem_intercon_imp_s00_data_fifo_0_clocks.xdc:6]
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_s00_data_fifo_0/hdmi_in_axi_mem_intercon_imp_s00_data_fifo_0_clocks.xdc] for cell 'hdmi_in_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_s01_regslice_0/hdmi_in_axi_mem_intercon_imp_s01_regslice_0_clocks.xdc] for cell 'hdmi_in_i/axi_mem_intercon/s01_couplers/s01_regslice/inst'
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_s01_regslice_0/hdmi_in_axi_mem_intercon_imp_s01_regslice_0_clocks.xdc] for cell 'hdmi_in_i/axi_mem_intercon/s01_couplers/s01_regslice/inst'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_auto_us_df_0/hdmi_in_axi_mem_intercon_imp_auto_us_df_0_clocks.xdc] for cell 'hdmi_in_i/axi_mem_intercon/s01_couplers/auto_us_df/inst'
+WARNING: [Vivado_Tcl 4-935] Waiver ID 'CDC-1' is a duplicate and will not be added again. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_auto_us_df_0/hdmi_in_axi_mem_intercon_imp_auto_us_df_0_clocks.xdc:18]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_auto_us_df_0/hdmi_in_axi_mem_intercon_imp_auto_us_df_0_clocks.xdc:24]
+WARNING: [Vivado_Tcl 4-920] Waiver ID 'CDC-1' -to list has >10000 objects! [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_auto_us_df_0/hdmi_in_axi_mem_intercon_imp_auto_us_df_0_clocks.xdc:27]
+WARNING: [Vivado_Tcl 4-920] Waiver ID 'CDC-1' -to list has >10000 objects! [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_auto_us_df_0/hdmi_in_axi_mem_intercon_imp_auto_us_df_0_clocks.xdc:30]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_auto_us_df_0/hdmi_in_axi_mem_intercon_imp_auto_us_df_0_clocks.xdc:33]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_auto_us_df_0/hdmi_in_axi_mem_intercon_imp_auto_us_df_0_clocks.xdc:36]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_auto_us_df_0/hdmi_in_axi_mem_intercon_imp_auto_us_df_0_clocks.xdc:39]
+WARNING: [Vivado_Tcl 4-935] Waiver ID 'CDC-10' is a duplicate and will not be added again. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_auto_us_df_0/hdmi_in_axi_mem_intercon_imp_auto_us_df_0_clocks.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_auto_us_df_0/hdmi_in_axi_mem_intercon_imp_auto_us_df_0_clocks.xdc:48]
+WARNING: [Vivado_Tcl 4-935] Waiver ID 'CDC-11' is a duplicate and will not be added again. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_auto_us_df_0/hdmi_in_axi_mem_intercon_imp_auto_us_df_0_clocks.xdc:54]
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_auto_us_df_0/hdmi_in_axi_mem_intercon_imp_auto_us_df_0_clocks.xdc] for cell 'hdmi_in_i/axi_mem_intercon/s01_couplers/auto_us_df/inst'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_m00_data_fifo_0/hdmi_in_axi_mem_intercon_imp_m00_data_fifo_0_clocks.xdc] for cell 'hdmi_in_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst'
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_m00_data_fifo_0/hdmi_in_axi_mem_intercon_imp_m00_data_fifo_0_clocks.xdc:2]
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_m00_data_fifo_0/hdmi_in_axi_mem_intercon_imp_m00_data_fifo_0_clocks.xdc] for cell 'hdmi_in_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_m00_regslice_0/hdmi_in_axi_mem_intercon_imp_m00_regslice_0_clocks.xdc] for cell 'hdmi_in_i/axi_mem_intercon/m00_couplers/m00_regslice/inst'
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_mem_intercon_imp_m00_regslice_0/hdmi_in_axi_mem_intercon_imp_m00_regslice_0_clocks.xdc] for cell 'hdmi_in_i/axi_mem_intercon/m00_couplers/m00_regslice/inst'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0_clocks.xdc] for cell 'hdmi_in_i/axi_vdma_0/U0'
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0_clocks.xdc] for cell 'hdmi_in_i/axi_vdma_0/U0'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_v_axi4s_vid_out_0_0/hdmi_in_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'hdmi_in_i/v_axi4s_vid_out_0/inst'
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_v_axi4s_vid_out_0_0/hdmi_in_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'hdmi_in_i/v_axi4s_vid_out_0/inst'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_v_tc_0_0/hdmi_in_v_tc_0_0_clocks.xdc] for cell 'hdmi_in_i/v_tc_0/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_v_tc_0_0/hdmi_in_v_tc_0_0_clocks.xdc:2]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_v_tc_0_0/hdmi_in_v_tc_0_0_clocks.xdc:2]
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_v_tc_0_0/hdmi_in_v_tc_0_0_clocks.xdc] for cell 'hdmi_in_i/v_tc_0/U0'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_v_tc_1_0/hdmi_in_v_tc_1_0_clocks.xdc] for cell 'hdmi_in_i/v_tc_1/U0'
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of [get_ports -scoped_to_current_instance clk]'. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_v_tc_1_0/hdmi_in_v_tc_1_0_clocks.xdc:2]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_v_tc_1_0/hdmi_in_v_tc_1_0_clocks.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_v_tc_1_0/hdmi_in_v_tc_1_0_clocks.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Vivado 12-259] No clocks specified, please specify clocks using -clock, -fall_clock, -rise_clock options [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_v_tc_1_0/hdmi_in_v_tc_1_0_clocks.xdc:6]
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_v_tc_1_0/hdmi_in_v_tc_1_0_clocks.xdc] for cell 'hdmi_in_i/v_tc_1/U0'
+Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_v_vid_in_axi4s_0_0/hdmi_in_v_vid_in_axi4s_0_0_clocks.xdc] for cell 'hdmi_in_i/v_vid_in_axi4s_0/inst'
+Finished Parsing XDC File [c:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.gen/sources_1/bd/hdmi_in/ip/hdmi_in_v_vid_in_axi4s_0_0/hdmi_in_v_vid_in_axi4s_0_0_clocks.xdc] for cell 'hdmi_in_i/v_vid_in_axi4s_0/inst'
+INFO: [Project 1-1714] 39 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 23 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1549.496 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 257 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 192 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 50 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 5 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 8 instances
+
+15 Infos, 36 Warnings, 10 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1549.496 ; gain = 1091.441
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1549.496 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 159810e27
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.652 . Memory (MB): peak = 1549.496 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+
+Phase 1.1.1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:xsdbm:3.0, cache-ID = ab76f22fca927c93.
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1943.188 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1946.199 ; gain = 0.000
+Phase 1.1.1 Generate And Synthesize Debug Cores | Checksum: 1cef00ca9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1946.199 ; gain = 22.957
+Phase 1.1 Core Generation And Design Setup | Checksum: 1cef00ca9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1946.199 ; gain = 22.957
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1cef00ca9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1946.199 ; gain = 22.957
+Phase 1 Initialization | Checksum: 1cef00ca9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1946.199 ; gain = 22.957
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 1cef00ca9
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 1946.199 ; gain = 22.957
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 1cef00ca9
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 1946.199 ; gain = 22.957
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1cef00ca9
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 1946.199 ; gain = 22.957
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 9 inverters resulting in an inversion of 73 pins
+INFO: [Opt 31-138] Pushed 4 inverter(s) to 8 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 16a24d19c
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1946.199 ; gain = 22.957
+Retarget | Checksum: 16a24d19c
+INFO: [Opt 31-389] Phase Retarget created 405 cells and removed 796 cells
+INFO: [Opt 31-1021] In phase Retarget, 260 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 1cf1e6e51
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1946.199 ; gain = 22.957
+Constant propagation | Checksum: 1cf1e6e51
+INFO: [Opt 31-389] Phase Constant propagation created 93 cells and removed 1071 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 556 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1946.199 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1946.199 ; gain = 0.000
+Phase 5 Sweep | Checksum: 234286153
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 1946.199 ; gain = 22.957
+Sweep | Checksum: 234286153
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 2282 cells
+INFO: [Opt 31-1021] In phase Sweep, 1802 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 234286153
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 1946.199 ; gain = 22.957
+BUFG optimization | Checksum: 234286153
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 234286153
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 1946.199 ; gain = 22.957
+Shift Register Optimization | Checksum: 234286153
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 234286153
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 1946.199 ; gain = 22.957
+Post Processing Netlist | Checksum: 234286153
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 206 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1cd5837ff
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1946.199 ; gain = 22.957
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1946.199 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1cd5837ff
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1946.199 ; gain = 22.957
+Phase 9 Finalization | Checksum: 1cd5837ff
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1946.199 ; gain = 22.957
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             405  |             796  |                                            260  |
+|  Constant propagation         |              93  |            1071  |                                            556  |
+|  Sweep                        |               0  |            2282  |                                           1802  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            206  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1cd5837ff
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1946.199 ; gain = 22.957
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 2 BRAM(s) out of a total of 28 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 1 WE to EN ports
+Number of BRAM Ports augmented: 15 newly gated: 3 Total Ports: 56
+Ending PowerOpt Patch Enables Task | Checksum: 154e08086
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 154e08086
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 2236.391 ; gain = 290.191
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 154e08086
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 19bebdfa1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 2236.391 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+53 Infos, 36 Warnings, 10 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 2236.391 ; gain = 686.895
+INFO: [Vivado 12-24828] Executing command : report_drc -file hdmi_in_wrapper_drc_opted.rpt -pb hdmi_in_wrapper_drc_opted.pb -rpx hdmi_in_wrapper_drc_opted.rpx
+Command: report_drc -file hdmi_in_wrapper_drc_opted.rpt -pb hdmi_in_wrapper_drc_opted.pb -rpx hdmi_in_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.runs/impl_1/hdmi_in_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.044 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.040 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.066 . Memory (MB): peak = 2236.391 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.runs/impl_1/hdmi_in_wrapper_opt.dcp' has been generated.
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 13 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: e57bc061
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 5bc1e780
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 120960397
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 120960397
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 120960397
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: f2f9b719
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: e3cfaf6f
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: e3cfaf6f
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 163278901
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 16e20d219
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 2 LUTNM shape to break, 1014 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 2, two critical 0, total 2, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 440 nets or LUTs. Breaked 2 LUTs, combined 438 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            2  |            438  |                   440  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            2  |            438  |                   440  |           0  |           9  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 1ced7398d
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Phase 2.5 Global Place Phase2 | Checksum: 1527a6d71
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:14 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1527a6d71
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:14 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1c990e2de
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1b566fca1
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 12cdf1746
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1cca6d9d8
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 1319c50b8
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:19 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+
+Phase 3.6.1 Place Remaining
+Phase 3.6.1 Place Remaining | Checksum: 181f7889c
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:27 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Phase 3.6 Small Shape Detail Placement | Checksum: 181f7889c
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:27 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1d09a06e3
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:27 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1ace2a571
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:27 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 1671c1866
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:30 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1671c1866
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:30 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1e6197da4
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.365 | TNS=-1.297 |
+Phase 1 Physical Synthesis Initialization | Checksum: 2049e0a9a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.546 . Memory (MB): peak = 2236.391 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 2007541d7
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.671 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1e6197da4
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:34 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.065. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 234e3251a
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:43 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:43 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 234e3251a
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:43 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 234e3251a
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:43 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                2x2|
+|___________|___________________|___________________|
+|      South|                1x1|                2x2|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 234e3251a
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:43 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 234e3251a
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:43 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2236.391 ; gain = 0.000
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:43 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1ab22861e
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:43 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Ending Placer Task | Checksum: b6e04da1
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:43 . Memory (MB): peak = 2236.391 ; gain = 0.000
+97 Infos, 36 Warnings, 10 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:04 ; elapsed = 00:00:45 . Memory (MB): peak = 2236.391 ; gain = 0.000
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_io -file hdmi_in_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 2236.391 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file hdmi_in_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 2236.391 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file hdmi_in_wrapper_utilization_placed.rpt -pb hdmi_in_wrapper_utilization_placed.pb
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 2236.391 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.runs/impl_1/hdmi_in_wrapper_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2236.391 ; gain = 0.000
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 0.065 | TNS= 0.000 | 
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+108 Infos, 36 Warnings, 10 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.061 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2236.391 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 2236.391 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.runs/impl_1/hdmi_in_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 788de960 ConstDB: 0 ShapeSum: 2858f151 RouteDB: 15f972f0
+Post Restoration Checksum: NetGraph: aa2af21b | NumContArr: 35564912 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 264d33067
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 2291.168 ; gain = 54.777
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 264d33067
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 2291.168 ; gain = 54.777
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 264d33067
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 2291.168 ; gain = 54.777
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 1cf567e65
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 2339.941 ; gain = 103.551
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.157  | TNS=0.000  | WHS=-0.355 | THS=-487.704|
+
+
+Phase 2.4 Update Timing for Bus Skew
+
+Phase 2.4.1 Update Timing
+Phase 2.4.1 Update Timing | Checksum: 21c80f207
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:27 . Memory (MB): peak = 2339.941 ; gain = 103.551
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.157  | TNS=0.000  | WHS=-0.223 | THS=-5.350 |
+
+Phase 2.4 Update Timing for Bus Skew | Checksum: 2137d2f53
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:27 . Memory (MB): peak = 2345.395 ; gain = 109.004
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00383142 %
+  Global Horizontal Routing Utilization  = 0.000422583 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 24996
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 24994
+  Number of Partially Routed Nets     = 2
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 1e193223b
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:27 . Memory (MB): peak = 2352.457 ; gain = 116.066
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 1e193223b
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:27 . Memory (MB): peak = 2352.457 ; gain = 116.066
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 24b758461
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:29 . Memory (MB): peak = 2352.457 ; gain = 116.066
+Phase 4 Initial Routing | Checksum: 24b758461
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:29 . Memory (MB): peak = 2352.457 ; gain = 116.066
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 2258
+ Number of Nodes with overlaps = 477
+ Number of Nodes with overlaps = 175
+ Number of Nodes with overlaps = 76
+ Number of Nodes with overlaps = 17
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.074 | TNS=-0.074 | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Global Iteration 0 | Checksum: 23685639c
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:40 . Memory (MB): peak = 2398.957 ; gain = 162.566
+
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 76
+ Number of Nodes with overlaps = 42
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.182  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 1e02cd319
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:42 . Memory (MB): peak = 2398.957 ; gain = 162.566
+Phase 5 Rip-up And Reroute | Checksum: 1e02cd319
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:42 . Memory (MB): peak = 2398.957 ; gain = 162.566
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1963e110b
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:43 . Memory (MB): peak = 2398.957 ; gain = 162.566
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.331  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 6.1 Delay CleanUp | Checksum: 11a7edf63
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:43 . Memory (MB): peak = 2398.957 ; gain = 162.566
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 11a7edf63
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:43 . Memory (MB): peak = 2398.957 ; gain = 162.566
+Phase 6 Delay and Skew Optimization | Checksum: 11a7edf63
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:43 . Memory (MB): peak = 2398.957 ; gain = 162.566
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.331  | TNS=0.000  | WHS=0.013  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 159205295
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:44 . Memory (MB): peak = 2398.957 ; gain = 162.566
+Phase 7 Post Hold Fix | Checksum: 159205295
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:44 . Memory (MB): peak = 2398.957 ; gain = 162.566
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 3.95061 %
+  Global Horizontal Routing Utilization  = 5.36976 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 159205295
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:44 . Memory (MB): peak = 2398.957 ; gain = 162.566
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 159205295
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:44 . Memory (MB): peak = 2398.957 ; gain = 162.566
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 1cebda308
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:45 . Memory (MB): peak = 2398.957 ; gain = 162.566
+
+Phase 11 Post Process Routing
+Phase 11 Post Process Routing | Checksum: 1cebda308
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:45 . Memory (MB): peak = 2398.957 ; gain = 162.566
+
+Phase 12 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.331  | TNS=0.000  | WHS=0.013  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 12 Post Router Timing | Checksum: 1cebda308
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:45 . Memory (MB): peak = 2398.957 ; gain = 162.566
+Total Elapsed time in route_design: 45.043 secs
+
+Phase 13 Post-Route Event Processing
+Phase 13 Post-Route Event Processing | Checksum: e71e0c0a
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:45 . Memory (MB): peak = 2398.957 ; gain = 162.566
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: e71e0c0a
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:45 . Memory (MB): peak = 2398.957 ; gain = 162.566
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+122 Infos, 36 Warnings, 10 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:59 ; elapsed = 00:00:45 . Memory (MB): peak = 2398.957 ; gain = 162.566
+INFO: [Vivado 12-24828] Executing command : report_drc -file hdmi_in_wrapper_drc_routed.rpt -pb hdmi_in_wrapper_drc_routed.pb -rpx hdmi_in_wrapper_drc_routed.rpx
+Command: report_drc -file hdmi_in_wrapper_drc_routed.rpt -pb hdmi_in_wrapper_drc_routed.pb -rpx hdmi_in_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.runs/impl_1/hdmi_in_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [Vivado 12-24828] Executing command : report_methodology -file hdmi_in_wrapper_methodology_drc_routed.rpt -pb hdmi_in_wrapper_methodology_drc_routed.pb -rpx hdmi_in_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file hdmi_in_wrapper_methodology_drc_routed.rpt -pb hdmi_in_wrapper_methodology_drc_routed.pb -rpx hdmi_in_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.runs/impl_1/hdmi_in_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 2436.941 ; gain = 37.984
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -report_unconstrained -file hdmi_in_wrapper_timing_summary_routed.rpt -pb hdmi_in_wrapper_timing_summary_routed.pb -rpx hdmi_in_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file hdmi_in_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file hdmi_in_wrapper_route_status.rpt -pb hdmi_in_wrapper_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_power -file hdmi_in_wrapper_power_routed.rpt -pb hdmi_in_wrapper_power_summary_routed.pb -rpx hdmi_in_wrapper_power_routed.rpx
+Command: report_power -file hdmi_in_wrapper_power_routed.rpt -pb hdmi_in_wrapper_power_summary_routed.pb -rpx hdmi_in_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+139 Infos, 38 Warnings, 10 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file hdmi_in_wrapper_clock_utilization_routed.rpt
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file hdmi_in_wrapper_bus_skew_routed.rpt -pb hdmi_in_wrapper_bus_skew_routed.pb -rpx hdmi_in_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+generate_parallel_reports: Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 2492.918 ; gain = 93.961
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 2525.742 ; gain = 14.945
+Wrote PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2528.629 ; gain = 17.777
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2528.629 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.151 . Memory (MB): peak = 2528.629 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2528.629 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2528.629 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 2528.629 ; gain = 17.777
+INFO: [Common 17-1381] The checkpoint 'C:/Users/henri/Downloads/Arty-Z7-20-HDMI-in-hw.xpr/Arty-Z7-HW/Arty-Z7-HW.runs/impl_1/hdmi_in_wrapper_routed.dcp' has been generated.
+INFO: [Memdata 28-208] The XPM instance: <hdmi_in_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <hdmi_in_i/v_vid_in_axi4s_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <hdmi_in_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <hdmi_in_i/v_axi4s_vid_out_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block hdmi_in_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the hdmi_in_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <hdmi_in_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <hdmi_in_i/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <hdmi_in_i/axi_vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <hdmi_in_i/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <hdmi_in_i/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <hdmi_in_i/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+Command: write_bitstream -force hdmi_in_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./hdmi_in_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+160 Infos, 38 Warnings, 10 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 3036.277 ; gain = 507.648
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 31 14:55:02 2025...
