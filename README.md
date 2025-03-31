@@ -20,9 +20,21 @@ engineers in analyzing critical systems.
 > Xlinix (ARTY Z7)
 > Vivado (ARTY Z7)
 > iceStick Evaluation
-> Adio (Troubleshooting for FGPA) 
+> Adio (Troubleshooting for FGPA)
+
+
+
+## Languages 
+> JavaScript
+> Verilog
+> Batchfile
+> TcL
+> Jupyter Notebook
+
 
 ### Embedded Chip Processor Test 
+Throughout experimentation, Embedded Chip Processor Method was proven most successful due its easy usuage despite slow processing. Speed wasn't a huge factor in our experimentation 
+but it was able to link boolean factors together. 
 
 ### FGPA Modulation Test 
 Repo2Txt
